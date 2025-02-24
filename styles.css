@@ -38,12 +38,12 @@ body .container{
     width: 100%;
 }
 
-header{
+body header{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.navbar{
+body header .navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,20 +53,20 @@ header{
     margin-top: 2.5rem;
 }
 
-.navdiv{
+header .navbar .navdiv{
     display: flex;
     align-items: center;
     width: 60%;
     gap: 4rem;
 }
 
-.logo{
+.navbar .navdiv .logo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.navigation{
+.navbar .navdiv .navigation{
     display: flex;
     flex-direction: row;
     width: 25rem;
@@ -74,7 +74,7 @@ header{
     gap: 2rem;
 }
 
-a{
+.navigation ul a{
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -84,13 +84,19 @@ a{
     font-weight: 560;
 }
 
-ul{
+.navdiv .navigation ul{
     display: flex;
     align-items: center;
     gap: 3rem;
 }
 
-.nav-actions{
+.navigation ul a:hover{
+    color: black;
+    transition: ease-in-out 0.7s;
+    cursor: pointer;
+}
+
+header .navbar .nav-actions{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,28 +105,26 @@ ul{
     margin-right: 1rem;
 }
 
-hr{
+body main hr{
     border: solid rgba(195, 195, 195, 0.37) 0.01px;
 }
 
-.cta{
+body main .cta{
     width: 80rem;
-    /* height: 50rem;
-    border: solid gainsboro 1px; */
 }
 
-.nav-actions a{
+header .navbar .nav-actions a{
     gap: 0;
 }
 
-.nav-actions #login-btn-link{
+header .navbar .nav-actions #login-btn-link{
     background-color: transparent;
     padding: 0.7rem;
     border-radius: 8px;
     border: none;
 }
 
-.nav-actions #login-btn-link:hover{
+header .navbar .nav-actions #login-btn-link:hover{
     background-color: whitesmoke;
     transition: ease-in-out 0.5s;
     cursor: pointer;

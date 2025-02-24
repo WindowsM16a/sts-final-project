@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root{
     --primary-50: #F9F5FF;
     --primary-200: #E9D7FE;
@@ -11,15 +13,129 @@
     --email-capture-text: #667085;
     --email-capture-hint: #475467;
     --Shadow-xs-x0y1blur2: #1018280D;
+    font-size: 16px;
 }
 
 *{
     margin: 0;
     padding: 0;
     border: 0;
+    text-decoration: none;
+    list-style: none;
     font-family: Inter;
 }
 
 body{
     box-sizing: border-box;
+}
+
+body .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--cta-paragraph);
+    max-width: 80rem;
+    width: 80rem;
+    margin-top: 2.5rem;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    width: 60%;
+    gap: 4rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    width: 25rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: var(--cta-paragraph);
+    font-weight: 560;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.nav-actions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    gap: 1rem;
+    margin-right: 1rem;
+}
+
+hr{
+    border: solid rgba(195, 195, 195, 0.37) 0.01px;
+}
+
+.cta{
+    width: 80rem;
+    /* height: 50rem;
+    border: solid gainsboro 1px; */
+}
+
+.nav-actions a{
+    gap: 0;
+}
+
+.nav-actions #login-btn-link{
+    background-color: transparent;
+    padding: 0.7rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.nav-actions #login-btn-link:hover{
+    background-color: whitesmoke;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.nav-actions #signup-btn-link{
+    background-color: var(--primary-600);
+    border: solid 1px var(--primary-600);
+    border-radius: 8px;
+    padding: 0.6rem;
+    color: white;
+}
+
+.nav-actions #signup-btn-link:hover{
+    background-color: var(--primary-700);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
 }

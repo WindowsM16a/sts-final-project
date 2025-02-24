@@ -132,10 +132,13 @@ header .navbar .nav-actions #login-btn-link{
     padding: 0.7rem;
     border-radius: 8px;
     border: none;
+    color: var(--cta-paragraph);
+    font-weight: 550;
 }
 
 header .navbar .nav-actions #login-btn-link:hover{
     background-color: whitesmoke;
+    color: black;
     transition: ease-in-out 0.5s;
     cursor: pointer;
 }

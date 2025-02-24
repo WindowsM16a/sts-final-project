@@ -74,7 +74,17 @@ header .navbar .navdiv{
     gap: 2rem;
 }
 
-.navigation ul a{
+.navigation a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    color: var(--cta-paragraph);
+    font-weight: 560;
+}
+
+.navdiv .logo a{
     text-decoration: none;
     display: flex;
     align-items: center;
